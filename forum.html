@@ -1,3 +1,8 @@
+<head>
+
+    <link rel="stylesheet" href="CSS/popup.css">
+</head>
+
 <body>
 
 
@@ -12,20 +17,20 @@
 
         <textarea></textarea>
         <button>add thread</button>
-        <div class="thread">
+        <div id="thread">
 
             <ol></ol>
         </div>
     </div>
 
+    <!--  popup thread form    -->
 
-
-
+    <!--  -->
 
     <script src="JS/data.js"></script>
     <script>
         console.log(threads);
-        // localStorage.clear();
+        //localStorage.clear();
         var container = document.querySelector('ol');
         for (let thread of threads) {
             var html = `
@@ -52,7 +57,6 @@
         //add thread
         function addThread(thread) {
             var container = document.querySelector('ol');
-            //var author= window.prompt("Enter your name: ");
             var id = 3;
             var date = Date.now()
             var test = "Thread content"
@@ -79,14 +83,21 @@
         var btn = document.querySelector('button');
         btn.addEventListener('click', function () {
             var txt = document.querySelector('textarea');
-
+            var listLi = document.querySelectorAll("ol"),
+                listLength = listLi.length;
+            // user info
+            var user = window.prompt("Enter your name: ");
+            var title = window.prompt("Enter your title: ");
             var thread = {
-                content: txt.value,
-                date: Date.now(),
-                author: 'tester',
+
                 id: 3,
-                title: 'test',
-                comments: "wow"
+                title: title,
+                author: user,
+                date: Date.now(),
+                content: "hiii",
+                comments: [
+
+                ]
             }
             addThread(thread);
             txt.value = '';

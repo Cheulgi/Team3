@@ -4,7 +4,7 @@ var defaultThreads = [
         title: "Thread 1",
         author: "Aaron",
         date: Date.now(),
-        content: "Thread content",
+        content: "",
         comments: [
             {
                 author: "Jack",
@@ -33,8 +33,13 @@ var defaultThreads = [
             {
                 author: "Arthur",
                 date: Date.now(),
-                content: "Hey to you too"
-            }
+                content: "Hey to you x"
+            },
+            {
+                author: "Jack",
+                date: Date.now(),
+                content: "byee"
+            },
         ]
     }
 ]
