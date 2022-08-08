@@ -1,4 +1,3 @@
-
 <body>
 
 
@@ -10,13 +9,23 @@
     <div class="main">
         <ol>
         </ol>
+
+        <textarea></textarea>
+        <button>add thread</button>
+        <div class="thread">
+
+            <ol></ol>
+        </div>
     </div>
+
+
 
 
 
     <script src="JS/data.js"></script>
     <script>
         console.log(threads);
+        // localStorage.clear();
         var container = document.querySelector('ol');
         for (let thread of threads) {
             var html = `
@@ -37,7 +46,55 @@
             </li>
             `
             container.insertAdjacentHTML('beforeend', html);
+
         }
+
+        //add thread
+        function addThread(thread) {
+            var container = document.querySelector('ol');
+            //var author= window.prompt("Enter your name: ");
+            var id = 3;
+            var date = Date.now()
+            var test = "Thread content"
+            var threadHtml = `
+            <li class="row">
+                <a href="/thread.html?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', threadHtml);
+        }
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            var txt = document.querySelector('textarea');
+
+            var thread = {
+                content: txt.value,
+                date: Date.now(),
+                author: 'tester',
+                id: 3,
+                title: 'test',
+                comments: "wow"
+            }
+            addThread(thread);
+            txt.value = '';
+            thread.threads.push(thread);
+            localStorage.setItem('threads', JSON.stringify(threads));
+        })
+
+
     </script>
     <style>
         body {
