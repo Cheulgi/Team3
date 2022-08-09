@@ -1,0 +1,49 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-image: linear-gradient(green, white);
+}
+
+.container-fluid{
+    color: white;
+}
+
+.navbar navbar-light bg-light{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.Title-Section{
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    text-align:center;
+}
+
+.About-Section{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    text-align:left;
+}
+
+.ForumTitle-Section{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    text-align: left;
+}
+
+.Forum-Information{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    text-align: left;
+}
+
+.Item-Section{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: left;
+}
+
+.ZipCode-Section{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align:left;
+}
