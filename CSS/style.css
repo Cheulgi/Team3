@@ -1,11 +1,13 @@
 body{
     height: 100vh;
+    overflow: scroll;
     background: linear-gradient(
         white,
         rgb(9, 124, 67)
 
     );
 }
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
