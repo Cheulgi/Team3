@@ -1,0 +1,29 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    background-image: linear-gradient(green , white);
+}
+
+.Title-Section{
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    text-align:center;
+}
+
+.AboutItem-Section{
+    font-family:'Times New Roman', Times, serif;
+    color:black;
+    text-align:center;
+}
+
+.Image-Section{
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    text-align: center;
+}
+
+.Message-Section{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    text-align:left;
+}
