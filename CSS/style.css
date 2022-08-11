@@ -21,6 +21,9 @@ body {
     color: #222;
     padding-bottom: 50px;
 }
+a:active{
+    color: aqua;
+}
 
 .container {
     max-width: 1200px;
