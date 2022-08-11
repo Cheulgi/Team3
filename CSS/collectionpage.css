@@ -1,8 +1,3 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    background-image: linear-gradient(green, white);
-}
 
 .container-fluid{
     color: white;
@@ -20,8 +15,9 @@ body{
 
 .About-Section{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color:white;
+    color:rgb(0, 0, 0);
     text-align:left;
+    font-size: large;
 }
 
 .ForumTitle-Section{
